@@ -1,0 +1,559 @@
+    body {
+        background: #e6f4f1;
+        font-family: "Open Sans", sans-serif;
+        margin: 0;
+        overflow-x: hidden;
+        line-height: 1.5;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+    
+    p,
+    h1,
+    h2,
+    h3,
+    h4 {
+        margin: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000;
+        display: inline-block;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    @font-face {
+        font-family: paralucent;
+        src: url('./@font-face/duondanfile.woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    .banner {
+        background-color: #202d4e;
+        color: #FFF;
+        padding: 0.85rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .banner a {
+        color: #ede7a8;
+        box-shadow: inset 0 -5px 0 0 rgba(237, 231, 168, 0.25);
+        text-decoration: none;
+    }
+    
+    .top {
+        background: url(./img/pattern.png) center/auto 200px repeat-x;
+        padding: 5rem 0;
+    }
+    
+    .top-2 {
+        max-width: var(--width, 73rem);
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .top .top-2 {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+        max-width: var(--width, 63rem);
+        align-items: center;
+    }
+    
+    .top-title {
+        font-size: 44px;
+        color: #3c5083;
+        font-family: paralucent, sans-serif;
+        font-weight: 300;
+        margin: 0 0 1rem;
+    }
+    
+    .top-title span {
+        font-size: 70px;
+        font-weight: 700;
+        color: #4166d2;
+        display: block;
+    }
+    
+    .top-content {
+        font-size: calc(13px + 0.5vw);
+        color: #3c5083;
+        margin: auto auto 1rem;
+        max-width: 630px;
+    }
+    
+    .top-book {
+        margin-left: 5%;
+    }
+    
+    .top-book img {
+        max-width: 300px;
+        border-radius: 6px;
+        box-shadow: 0 17px 25px 0 rgba(0, 0, 0, 0.25);
+    }
+    
+    .top-button {
+        min-width: 200px;
+        padding: 18px 0px;
+        border-radius: 5px;
+        color: #FFF;
+        background-color: #3864d9;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+        letter-spacing: 0.5px;
+        font-size: 16px;
+        display: inline-block;
+        text-align: center;
+        border: 0;
+    }
+    
+    .top-button:hover {
+        background-color: #2246a7;
+        box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .preview {
+        font-size: 18px;
+        margin-top: 1rem;
+    }
+    
+    .preview a {
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: inset 0 -5px 0 0 rgba(56, 100, 217, 0.25);
+        color: #000;
+        display: inline-block;
+    }
+    /*MID CONTENT*/
+    
+    .mid-content {
+        background-color: #3864D9;
+        padding: 5rem 0;
+    }
+    
+    .intro-1 {
+        max-width: 692px;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 20px;
+        margin: 0 auto 3rem;
+    }
+    
+    .intro-2 {
+        max-width: 692px;
+        font-size: 20px;
+        margin: 0 auto 5rem;
+        text-align: center;
+        color: #FFF;
+    }
+    
+    .mid-content h2 {
+        font-family: paralucent, sans-serif;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: #3864D9;
+        font-size: 40px;
+        padding: 2rem 0;
+    }
+    
+    .content {
+        max-width: 940px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 9px;
+    }
+    
+    .table-content {
+        background-color: #f0f8f7;
+        counter-reset: chapter;
+    }
+    
+    .item {
+        position: relative;
+        padding: 2rem 2rem 2rem 8rem;
+    }
+    
+    .item h3 {
+        margin: 0 0 0.5rem;
+        font-size: 22px;
+    }
+    
+    .item:before {
+        counter-increment: chapter;
+        content: "Ch " counter(chapter);
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #b0c4ff;
+        font-size: 14px;
+        text-align: center;
+        line-height: 40px;
+        left: 2rem;
+        top: 2rem;
+        width: 64px;
+        height: 64px;
+        line-height: 64px;
+        font-size: 20px;
+    }
+    
+    .unique-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .item-unique {
+        color: #FFF;
+        display: flex;
+        padding: 1rem 18px;
+        align-items: flex-start;
+        max-width: 47%;
+    }
+    
+    .item-unique h3 {
+        margin: 0 0 0.5rem;
+        font-size: 22px;
+    }
+    
+    .item-unique p {
+        font-size: 20px;
+    }
+    
+    .unique {
+        background-color: #202d4e;
+        padding: 5rem 0;
+    }
+    
+    .unique h2 {
+        color: #fff;
+        margin-bottom: 3rem;
+        font-family: paralucent, sans-serif;
+        font-weight: 700;
+        text-align: center;
+        font-size: 40px;
+        padding: 2rem 0;
+    }
+    
+    .unique-content .item-unique img {
+        max-width: 50px;
+        margin-right: 2rem;
+    }
+    /*READER*/
+    
+    .reader {
+        padding: 5rem 0;
+    }
+    
+    .reader h2 {
+        font-family: paralucent, sans-serif;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        font-size: 40px;
+        color: #3864D9;
+        padding: 2rem 0;
+    }
+    
+    .reader-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .reader-avt {
+        width: 84px;
+        height: 84px;
+        border-radius: 50%;
+        border: 4px solid #fff;
+        margin-inline-end: 10px;
+        object-fit: cover;
+    }
+    
+    .reader-info {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+    }
+    
+    .reader-item {
+        max-width: 50%;
+        padding: 2rem 0;
+    }
+    
+    .reader-item blockquote {
+        margin: 0;
+        position: relative;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 9px 14px 0 rgba(0, 0, 0, 0.06);
+        width: 85%;
+    }
+    
+    .reader-item blockquote:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -40px;
+        width: 40px;
+        height: 50px;
+        background-color: #fff;
+    }
+    /*buybook*/
+    
+    .buybook h2 {
+        font-family: paralucent, sans-serif;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        font-size: 40px;
+        padding: 2rem 0;
+        color: #FFF;
+    }
+    
+    .buybook {
+        padding: 2rem 0;
+    }
+    
+    .buybook-content {
+        max-width: 380px;
+        margin: 0 auto;
+        background-color: #e1efec;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 9px 14px 0 rgba(0, 0, 0, 0.06);
+        text-align: center;
+    }
+    
+    .buybook-content p:nth-last-child(2) {
+        margin-bottom: 1rem;
+    }
+    
+    .buybook-price s {
+        font-size: 1.5rem;
+        font-weight: normal;
+        color: black;
+    }
+    
+    .buybook-price span {
+        color: #3864D9;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .buybook-content img {
+        display: block;
+        width: 100px;
+        max-width: 100%;
+        border-radius: 5px;
+        box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.25);
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.5rem;
+    }
+    
+    .buybook-notice {
+        max-width: 500px;
+        margin: 2rem auto 0;
+        text-align: center;
+    }
+    
+    .buybook-notice p {
+        color: #FFF;
+    }
+    /*feedback*/
+    
+    .feedback h2 {
+        font-family: paralucent, sans-serif;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        font-size: 40px;
+        color: #3864D9;
+        padding: 2rem 0;
+    }
+    /* author */
+    
+    .author {
+        padding: 5rem 0;
+    }
+    
+    .author .top-2 {
+        max-width: var(--width, 61rem);
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .author h2 {
+        font-family: paralucent, sans-serif;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        font-size: 40px;
+        color: #3864D9;
+        padding: 2rem 0;
+    }
+    
+    .author-content {
+        display: flex;
+        background-color: #fff;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.05);
+        border-radius: 9px;
+        padding: 1rem;
+    }
+    
+    .author-content h3 {
+        font-size: 22px;
+        color: #202d4e;
+        margin-bottom: 0.5rem;
+    }
+    
+    .author-content p {
+        font-size: 18px;
+        color: #525252;
+    }
+    
+    .author-content img {
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    .author-link {
+        background-color: #dfedeb;
+        padding: 1rem;
+    }
+    
+    .author-link p {
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+    
+    .author-link a::before {
+        content: "";
+        background: url(./img/link.png) left center/16px no-repeat;
+        display: inline-block;
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+    }
+    
+    .author-link ul li:not(:last-child) {
+        margin-bottom: 0.5rem;
+    }
+    
+    .author-link {
+        width: 30%;
+        height: 176px;
+    }
+    
+    .author-content2 {
+        width: 65%;
+        margin: 0 10px;
+    }
+    /*respon*/
+    
+    @media screen and (max-width: 799px) {
+        .top-book img {
+            max-width: 200px;
+        }
+        .top {
+            padding: 2rem 0;
+        }
+        .top-2 {
+            flex-direction: column-reverse;
+        }
+        .top-3 {
+            text-align: center;
+            padding-top: 20px;
+        }
+        .top-title {
+            font-size: 26px;
+        }
+        .top-title span {
+            font-size: 40px;
+            display: block;
+        }
+        .table-content h3 {
+            font-size: 18px;
+        }
+        .table-content .item {
+            padding: 1rem 1rem 1rem 5rem;
+        }
+        .table-content .item::before {
+            counter-increment: chapter;
+            content: "Ch " counter(chapter);
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #b0c4ff;
+            font-size: 14px;
+            text-align: center;
+            line-height: 40px;
+        }
+        .item-unique {
+            max-width: 100%;
+        }
+        .unique-content .item-unique img {
+            max-width: 30px;
+            margin-right: 1rem;
+        }
+        .item-unique h3 {
+            margin: 0 0 0.5rem;
+            font-size: 18px;
+        }
+        .item-unique p {
+            font-size: 16px;
+        }
+        .reader-item {
+            max-width: 100%;
+        }
+        .reader-item blockquote {
+            width: 100%;
+        }
+        .author-content {
+            flex-direction: column;
+        }
+        .author-link {
+            width: auto;
+            height: auto;
+        }
+        .author-content2 {
+            width: 100%;
+            margin: 15px 10px;
+        }
+        .author {
+            padding: 2.5rem 0;
+        }
+    }
